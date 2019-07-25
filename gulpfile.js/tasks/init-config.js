@@ -6,7 +6,7 @@ var merge = require('merge-stream')
 
 gulp.task('init-config', function () {
   var configStream = gulp.src(['gulpfile.js/path-config.json', 'gulpfile.js/task-config.js'])
-    .pipe(gulp.dest(projectPath('config')))
+    .pipe(gulp.dest(projectPath('_config.js')))
 
   log(colors.green('Adding default path-config.json and task-config.js files to ./config/'))
 

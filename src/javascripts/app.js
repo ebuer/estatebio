@@ -1,3 +1,4 @@
-import './base/vue'
-import './base/custom'
+import 'base/config'
+import 'base/vue'
+import 'base/custom'
 
