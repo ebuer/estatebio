@@ -92,6 +92,67 @@
       .app-slide {
         margin: 0;
       }
+
+      @include screen('maxTablet') {
+        .app-card {
+          height: 250px;
+        }
+      }
+    }
+
+    @include screen('mobile') {
+      &.start {
+        height: calc(100vh - 90px);
+
+        .start-content {
+          .start-inner {
+            height: auto;
+            padding-top: 20px;
+
+            .inner-content {
+              .text {
+                font-size: 20px;
+              }
+
+              .buttons {
+                padding-top: 0;
+              }
+            }
+          }
+        }
+      }
+      &.instagram {
+        .app-card {
+          margin: 10px 0;
+        }
+      }
+    }
+    @include screen('miniMobile') {
+      &.start {
+        .start-content {
+          .start-inner {
+            .inner-content {
+              .title {
+                padding-top: 10px;
+              }
+              .text {
+                line-height: normal;
+              }
+
+              .subText {
+                line-height: normal;
+              }
+
+              .buttons {
+                .app-button {
+                  padding: 4px 10px;
+                  font-size: 10px;
+                }
+              }
+            }
+          }
+        }
+      }
     }
   }
 

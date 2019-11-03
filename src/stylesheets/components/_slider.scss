@@ -94,4 +94,83 @@
   .slide-area {
     padding-top: 40px;
   }
+
+  &.home {
+    display: block;
+    position: relative;
+    margin: 0 !important;
+    height: 100%;
+    //overflow: hidden;
+    .home-slide-inner {
+      width: 100%;
+      position: absolute;
+      bottom: 10%;
+    }
+    .slide {
+      .owl-item {
+        padding: 8px;
+        background-color: #ffffff;
+        border-radius: 4px;
+        @include box-shadow();
+      }
+    }
+    .top-slide-area {
+      //display: flex;
+      position: relative;
+      left: 120px;
+      .slide {
+        .owl-item {
+          opacity: 0.3;
+          transition: all 300ms ease;
+          &.op1 {
+            opacity: 1;
+          }
+        }
+      }
+    }
+    .slide-area {
+      width: 95%;
+
+      .slide-nav {
+        display: flex;
+        margin-top: 20px;
+        .app-button {
+          padding: 5px 10px;
+        }
+
+        #home-slide-dots {
+          width: 100%;
+          padding: 0 20px;
+          display: flex;
+          align-items: center;
+          .owl-dot {
+            width: 100%;
+            height: 4px;
+            background-color: $homeSlideDot;
+            outline: none !important;
+            border: 0;
+
+            &.active {
+              background-color: $standartBlue;
+            }
+          }
+        }
+      }
+    }
+    @include screen('maxTablet'){
+      .top-slide-area {
+        display: none !important;
+      }
+    }
+
+  }
+  @include screen('mobile'){
+    .slide-info {
+      .right {
+        .filter, .line {
+          display: none;
+        }
+      }
+    }
+  }
 }

@@ -1,5 +1,6 @@
 const slideCongig = {
     slideNav: '.js-slide-btn',
+    homeSlide: '.js-slide-home',
     lastVisitSlide: '.js-slide-visit',
     lastAddSlide: '.js-slide-last',
     popularSlide: '.js-slide-popular',
@@ -7,10 +8,48 @@ const slideCongig = {
 }
 
 
+if (exist(slideCongig.homeSlide)) {
+    $(slideCongig.homeSlide).owlCarousel({
+        loop: true,
+        margin: 10,
+        dotsContainer: '#home-slide-dots',
+        onInitialized:function(event){
+            if ($(event.target).hasClass('top')) {
+                const slide = $(event.target)
+                $(slide.find('.owl-item.active')[0]).addClass('op1')
+            }
+        },
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 2
+            },
+            1000: {
+                items: 2
+            }
+        }
+    })
+
+    $(slideCongig.homeSlide).on('changed.owl.carousel', function (event) {
+        if ($(event.target).hasClass('top')) {
+            const slide = $(event.target)
+            slide.find('.owl-item').removeClass('op1')
+            setTimeout(function () {
+                const first = $(slide.find('.active')[0])
+                first.addClass('op1')
+            })
+        }
+
+    })
+}
+
 if (exist(slideCongig.lastVisitSlide)) {
     $(slideCongig.lastVisitSlide).owlCarousel({
         loop: true,
         margin: 10,
+        lazyLoad: true,
         responsive: {
             0: {
                 items: 1
@@ -29,6 +68,7 @@ if (exist(slideCongig.lastVisitSlide)) {
 if (exist(slideCongig.lastAddSlide)) {
     $(slideCongig.lastAddSlide).owlCarousel({
         loop: true,
+        lazyLoad: true,
         margin: 10,
         responsive: {
             0: {
@@ -47,6 +87,7 @@ if (exist(slideCongig.lastAddSlide)) {
 if (exist(slideCongig.popularSlide)) {
     $(slideCongig.popularSlide).owlCarousel({
         loop: true,
+        lazyLoad: true,
         margin: 10,
         responsive: {
             0: {
@@ -62,9 +103,10 @@ if (exist(slideCongig.popularSlide)) {
     })
 }
 
-if(exist(slideCongig.projectSlide)){
+if (exist(slideCongig.projectSlide)) {
     $(slideCongig.projectSlide).owlCarousel({
         loop: true,
+        lazyLoad: true,
         margin: 10,
         responsive: {
             0: {

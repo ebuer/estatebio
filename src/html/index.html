@@ -8,7 +8,7 @@
         <div class="start-content">
             <div class="container h-100">
                 <div class="row h-100">
-                    <div class="col col-md-7">
+                    <div class="col-12 col-lg-6">
                         <div class="start-inner">
                             <div class="inner-content">
                                 <h1 class="title">EMLAK BIO</h1>
@@ -17,9 +17,12 @@
                                     HAYAL ETTİĞİN EVİ YAPAY ZEKA <b class="blue">BOTUMUZ BULSUN!</b>
                                 </h3>
                                 <p class="subText">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse a libero faucibus,
-                                    ultricies nunc sit amet, condimentum ante. Cras volutpat dui et arcu condimentum dictum.Integer
-                                    sagittis, ex sit amet hendrerit iaculis, dui eros convallis tellus, a iaculis ex libero at ex. Nam ornare
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse a libero
+                                    faucibus,
+                                    ultricies nunc sit amet, condimentum ante. Cras volutpat dui et arcu condimentum
+                                    dictum.Integer
+                                    sagittis, ex sit amet hendrerit iaculis, dui eros convallis tellus, a iaculis ex
+                                    libero at ex. Nam ornare
                                     ullamcorper tortor, eu semper lorem molestie ac.
                                 </p>
                                 <div class="buttons">
@@ -30,8 +33,36 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col col-md-5">
-                        slider
+                    <div class="col-12 col-lg-6">
+                        <div class="app-slide home">
+                            <div class="home-slide-inner">
+                                <div class="top-slide-area">
+                                    <div class="owl-carousel slide js-slide-home top">
+                                        {% for item in homeTop %}
+                                        <div class="item">
+                                            {{card.field(item)}}
+                                        </div>
+                                        {% endfor %}
+                                    </div>
+                                </div>
+                                <div class="slide-area">
+                                    <div class="owl-carousel slide js-slide-home">
+                                        {% for item in homeBottom %}
+                                        <div class="item">
+                                            {{card.field(item)}}
+                                        </div>
+                                        {% endfor %}
+                                    </div>
+                                    <div class="slide-nav js-nav" data-slider=".js-slide-home">
+                                        <button class="app-button js-slide-btn" data-action="prev"><i
+                                                class="fa fa-angle-left" aria-hidden="true"></i></button>
+                                        <div id="home-slide-dots"></div>
+                                        <button class="app-button js-slide-btn" data-action="next"><i
+                                                class="fa fa-angle-right" aria-hidden="true"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -52,10 +83,10 @@
                         </div>
                         <span class="line"></span>
                         <div class="nav js-nav" data-slider=".js-slide-visit">
-                            <button class="slide-btn prev js-slide-btn" data-action="prev"><i class="fa fa-caret-left"
+                            <button class="slide-btn prev js-slide-btn" data-action="prev"><i class="fa fa-angle-left"
                                                                                               aria-hidden="true"></i>
                             </button>
-                            <button class="slide-btn next js-slide-btn" data-action="next"><i class="fa fa-caret-right"
+                            <button class="slide-btn next js-slide-btn" data-action="next"><i class="fa fa-angle-right"
                                                                                               aria-hidden="true"></i>
                             </button>
                         </div>
@@ -89,10 +120,10 @@
                         </div>
                         <span class="line"></span>
                         <div class="nav js-nav" data-slider=".js-slide-last">
-                            <button class="slide-btn prev js-slide-btn" data-action="prev"><i class="fa fa-caret-left"
+                            <button class="slide-btn prev js-slide-btn" data-action="prev"><i class="fa fa-angle-left"
                                                                                               aria-hidden="true"></i>
                             </button>
-                            <button class="slide-btn next js-slide-btn" data-action="next"><i class="fa fa-caret-right"
+                            <button class="slide-btn next js-slide-btn" data-action="next"><i class="fa fa-angle-right"
                                                                                               aria-hidden="true"></i>
                             </button>
                         </div>
@@ -120,10 +151,10 @@
                     </div>
                     <div class="right">
                         <div class="nav js-nav" data-slider=".js-slide-popular">
-                            <button class="slide-btn prev js-slide-btn" data-action="prev"><i class="fa fa-caret-left"
+                            <button class="slide-btn prev js-slide-btn" data-action="prev"><i class="fa fa-angle-left"
                                                                                               aria-hidden="true"></i>
                             </button>
-                            <button class="slide-btn next js-slide-btn" data-action="next"><i class="fa fa-caret-right"
+                            <button class="slide-btn next js-slide-btn" data-action="next"><i class="fa fa-angle-right"
                                                                                               aria-hidden="true"></i>
                             </button>
                         </div>
@@ -151,10 +182,10 @@
                     </div>
                     <div class="right">
                         <div class="nav js-nav" data-slider=".js-slide-project">
-                            <button class="slide-btn prev js-slide-btn" data-action="prev"><i class="fa fa-caret-left"
+                            <button class="slide-btn prev js-slide-btn" data-action="prev"><i class="fa fa-angle-left"
                                                                                               aria-hidden="true"></i>
                             </button>
-                            <button class="slide-btn next js-slide-btn" data-action="next"><i class="fa fa-caret-right"
+                            <button class="slide-btn next js-slide-btn" data-action="next"><i class="fa fa-angle-right"
                                                                                               aria-hidden="true"></i>
                             </button>
                         </div>
@@ -187,7 +218,7 @@
                 <div class="slide-area">
                     <div class="row">
                         {% for i in range(6, 9) -%}
-                        <div class="col-4">
+                        <div class="col-12 col-md-4">
                             <div class="app-card large">
                                 <div class="card-content">
                                     <div class="card-img">

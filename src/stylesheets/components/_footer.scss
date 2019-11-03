@@ -24,9 +24,10 @@
 
   .footer-menu {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
 
     .menu-list {
+      margin-right: 15px;
       li {
         display: inline-block;
 
@@ -73,6 +74,24 @@
         + li {
           margin-left: 5px;
         }
+      }
+    }
+  }
+  @include screen('maxDesktop'){
+    .footer-menu {
+      display: block;
+      text-align: right;
+    }
+  }
+  @include screen('mobile'){
+    .copyright {
+      display: block;
+      text-align: center;
+    }
+    .footer-menu {
+      text-align: center;
+      .menu-list {
+        margin: 5px 0;
       }
     }
   }

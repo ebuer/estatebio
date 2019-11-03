@@ -156,5 +156,81 @@
       "title": "MÜSTAKİL 4+2 DUBLEKS",
       "price": "2.500₺/AYLIK"
     }
+  ],
+  "homeTop": [
+    {
+      "noLazy": true,
+      "src": "uploads/house05.jpg",
+      "tag_1": "4+2",
+      "tag_2": "DUBLEKS",
+      "profileSrc": "uploads/house07.jpg",
+      "title": "MÜSTAKİL 4+2 DUBLEKS",
+      "price": "2.500₺/AYLIK"
+    },
+    {
+      "noLazy": true,
+      "src": "uploads/house06.jpg",
+      "tag_1": "4+2",
+      "tag_2": "DUBLEKS",
+      "profileSrc": "uploads/house13.jpg",
+      "title": "MÜSTAKİL 4+2 DUBLEKS",
+      "price": "2.500₺/AYLIK"
+    },
+    {
+      "noLazy": true,
+      "src": "uploads/house07.jpg",
+      "tag_1": "4+2",
+      "tag_2": "DUBLEKS",
+      "profileSrc": "uploads/house12.jpg",
+      "title": "MÜSTAKİL 4+2 DUBLEKS",
+      "price": "2.500₺/AYLIK"
+    },
+    {
+      "noLazy": true,
+      "src": "uploads/house08.jpg",
+      "tag_1": "4+2",
+      "tag_2": "DUBLEKS",
+      "profileSrc": "uploads/house11.jpg",
+      "title": "MÜSTAKİL 4+2 DUBLEKS",
+      "price": "2.500₺/AYLIK"
+    }
+  ],
+  "homeBottom": [
+    {
+      "noLazy": true,
+      "src": "uploads/house13.jpg",
+      "tag_1": "4+2",
+      "tag_2": "DUBLEKS",
+      "profileSrc": "uploads/house11.jpg",
+      "title": "MÜSTAKİL 4+2 DUBLEKS",
+      "price": "2.500₺/AYLIK"
+    },
+    {
+      "noLazy": true,
+      "src": "uploads/house14.jpg",
+      "tag_1": "4+2",
+      "tag_2": "DUBLEKS",
+      "profileSrc": "uploads/house10.jpg",
+      "title": "MÜSTAKİL 4+2 DUBLEKS",
+      "price": "2.500₺/AYLIK"
+    },
+    {
+      "noLazy": true,
+      "src": "uploads/house15.jpg",
+      "tag_1": "4+2",
+      "tag_2": "DUBLEKS",
+      "profileSrc": "uploads/house01.jpg",
+      "title": "MÜSTAKİL 4+2 DUBLEKS",
+      "price": "2.500₺/AYLIK"
+    },
+    {
+      "noLazy": true,
+      "src": "uploads/house17.jpg",
+      "tag_1": "4+2",
+      "tag_2": "DUBLEKS",
+      "profileSrc": "uploads/house03.jpg",
+      "title": "MÜSTAKİL 4+2 DUBLEKS",
+      "price": "2.500₺/AYLIK"
+    }
   ]
 }

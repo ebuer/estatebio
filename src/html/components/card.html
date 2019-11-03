@@ -2,7 +2,11 @@
 <div class="app-card {% if obj.large !== undefined %}large{% endif %}">
     <div class="card-content">
         <div class="card-img">
+            {% if obj.noLazy === true %}
             <a href="#"><img class="img" src="{{obj.src}}" alt="house"></a>
+            {% else %}
+            <a href="#"><img class="img owl-lazy" data-src="{{obj.src}}" alt="house"></a>
+            {% endif %}
         </div>
 
         <div class="card-tags">
@@ -15,7 +19,12 @@
             <div class="inner">
                 {% if obj.profileSrc !== undefined %}
                 <div class="info-img">
+                    {% if obj.noLazy === true %}
                     <img class="img" src="{{obj.profileSrc}}" alt="profile">
+                    {% else %}
+                    <img class="img owl-lazy" data-src="{{obj.profileSrc}}" alt="profile">
+                    {% endif %}
+
                 </div>
                 {% endif %}
                 <div class="info-text">

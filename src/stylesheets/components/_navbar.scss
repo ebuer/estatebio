@@ -70,4 +70,26 @@
       margin-left: 30px;
     }
   }
+
+  @include screen('mobile'){
+   position: static;
+    .links {
+      margin-top: 10px;
+    }
+  }
+  @include screen('miniMobile'){
+    .nav-search {
+      width: 90%;
+      float: right;
+    }
+    .links {
+     .app-button {
+       font-size: 9px;
+       padding: 4px 10px;
+     }
+      .app-link {
+        font-size: 9px;
+      }
+    }
+  }
 }
