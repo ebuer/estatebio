@@ -100,7 +100,7 @@
     position: relative;
     margin: 0 !important;
     height: 100%;
-    //overflow: hidden;
+    overflow: hidden;
     .home-slide-inner {
       width: 100%;
       position: absolute;
@@ -115,7 +115,6 @@
       }
     }
     .top-slide-area {
-      //display: flex;
       position: relative;
       left: 120px;
       .slide {

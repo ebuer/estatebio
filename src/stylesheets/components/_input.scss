@@ -1,0 +1,21 @@
+@import "../variable";
+.app-input {
+  display: block;
+  width: 100%;
+  border: 1px solid $inputBorderGray;
+  border-radius: 4px;
+  background-color: #ffffff;
+  outline: none;
+  line-height: 1.5;
+  font-size: 1rem;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  padding: .375rem .75rem;
+  &::placeholder {
+    color: $inoutPlaceHolderGray;
+  }
+  &:focus {
+    color: #495057;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(155, 156, 170,.25);
+  }
+}

@@ -1,0 +1,14 @@
+@import "../variable";
+
+#page-account {
+  .account-form {
+    background-color: #ffffff;
+    padding: 15px;
+    .form-group {
+      label {
+        color: $inoutPlaceHolderGray;
+        font-size: 12px;
+      }
+    }
+  }
+}
