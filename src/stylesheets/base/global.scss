@@ -1,3 +1,64 @@
+@import "../variable";
 body {
-  background-color: #eaeaea;
+  background-color: $bodyBackground;
+  font-family: 'Open Sans', sans-serif;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.app-logo {
+  width: 50px;
+  height: 50px;
+  background-color: $standartBlue;
+  border-radius: 10px;
+  transform: rotate(45deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .img {
+    transform: rotate(-45deg);
+    max-width: 19px;
+  }
+
+}
+
+
+
+// preloader
+.preloader-parent {
+  position: relative;
+  overflow: hidden;
+}
+
+.app-preloader {
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  z-index: 999999;
+  background-color: #f6f7ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &.full {
+    width: 100vw;
+    height: 100vh;
+  }
+
+
+  .pre-overlay {
+    position: absolute;
+  }
+
+  .pre-inner {
+
+    .img {
+      max-width: 100px;
+    }
+  }
 }

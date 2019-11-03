@@ -16,6 +16,7 @@ module.exports = {
         provide: {
             $: "jquery",
             jQuery: "jquery",
+            "window.jquery":"jquery",
             axios: "axios",
             Vue: "vue/dist/vue.js",
         }

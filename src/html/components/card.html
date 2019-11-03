@@ -1,0 +1,29 @@
+{% macro field(obj) %}
+<div class="app-card {% if obj.large !== undefined %}large{% endif %}">
+    <div class="card-content">
+        <div class="card-img">
+            <a href="#"><img class="img" src="{{obj.src}}" alt="house"></a>
+        </div>
+
+        <div class="card-tags">
+            <ul class="list">
+                <li class="item"><span class="text">{{obj.tag_1}}</span></li>
+                <li class="item"><span class="text">{{obj.tag_2}}</span></li>
+            </ul>
+        </div>
+        <div class="card-info">
+            <div class="inner">
+                {% if obj.profileSrc !== undefined %}
+                <div class="info-img">
+                    <img class="img" src="{{obj.profileSrc}}" alt="profile">
+                </div>
+                {% endif %}
+                <div class="info-text">
+                    <a class="title-link" href="#">{{obj.title}}</a>
+                    <small class="price">{{obj.price}}</small>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endmacro %}

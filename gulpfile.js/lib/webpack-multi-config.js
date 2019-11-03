@@ -36,7 +36,13 @@ module.exports = function (env) {
       filename: rev ? '[name]-[hash].js' : '[name].js',
       publicPath: publicPath
     },
-    plugins: [],
+    plugins: [
+      new webpack.ProvidePlugin({
+        $: "jquery",
+        jQuery: "jquery",
+        "window.jQuery": "jquery"
+      })
+    ],
     resolve: {
       extensions: extensions,
       alias: TASK_CONFIG.javascripts.alias,

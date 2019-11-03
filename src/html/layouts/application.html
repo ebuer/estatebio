@@ -2,13 +2,91 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>App</title>
+    <title>Emlak</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap&subset=latin-ext" rel="stylesheet">
     <link rel="stylesheet" href="stylesheets/app.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 <div id="app">
-    {% block content %} {% endblock %}
+    <nav id="app-navbar">
+        <div class="container">
+           <div class="row align-items-md-center">
+               <div class="col col-md-1">
+                   <a class="app-logo" href="#">
+                       <img class="img" src="images/logo.svg" alt="logo">
+                   </a>
+               </div>
+               <div class="col col-md-4">
+                  <div class="nav-search">
+                      <form>
+                          <div class="search-input">
+                              <select class="select" name="type">
+                                  <option selected value="0">Kiralık</option>
+                                  <option value="1">Satılık</option>
+                              </select>
+                              <span class="line"></span>
+                              <input class="input" type="text" placeholder="Kelime, İlan No veya Mağaza Adı İle Ara">
+                              <button class="submit"><i class="fa fa-search"></i></button>
+                          </div>
+                      </form>
+                  </div>
+               </div>
+               <div class="col col-md-7">
+                   <div class="links">
+                       <a class="app-button" href="#"><i class="fa fa-plus"></i> YENİ İLAN VER</a>
+                       <a class="app-link gray" href="#">KAYIT OL</a>
+                       <a class="app-link gray" href="#">GİRİŞ YAP <i class="fa fa-arrow-right"></i></a>
+                   </div>
+               </div>
+           </div>
+        </div>
+    </nav>
+    <div id="app-content">
+        {% block content %} {% endblock %}
+    </div>
+    <footer id="app-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col col-md-1">
+                    <a class="app-logo" href="#">
+                        <img class="img" src="images/logo.svg" alt="logo">
+                    </a>
+                </div>
+                <div class="col col-md-11">
+                    <p class="footer-text">
+                        emlakbio.com’da yer alan kullanıcıların oluşturduğu tüm içerik, görüş ve bilgilerin doğruluğu, eksiksiz ve değişmez olduğu, yayınlanması ile ilgili yasal yükümlülükler içeriği oluşturan kullanıcıya
+                        aittir. Bu içeriğin, görüş ve bilgilerin yanlışlık, eksiklik veya yasalarla düzenlenmiş kurallara aykırılığından emlakbio.com hiçbir şekilde sorumlu değildir. Sorularınız için ilan sahibi ile irtibata geçebilirsiniz.
+                        Yer Sağlayıcı: 232
+                    </p>
+                </div>
+            </div>
+            <div class="row mt-md-3">
+                <div class="col col-md-3">
+                    <span class="copyright">© Copyright 2019 Tüm Hakları Sakladır - emlakbio.com</span>
+                </div>
+                <div class="col col-md-9">
+                    <div class="footer-menu">
+                        <ul class="menu-list">
+                            <li><a href="#">Hakkımızda</a></li>
+                            <li><a href="#">Kurumsal</a></li>
+                            <li><a href="#">Medya İletişimi ve Görseller</a></li>
+                            <li><a href="#">Hukuksal</a></li>
+                            <li><a href="#">İnsan Kaynakları</a></li>
+                            <li><a href="#">İletişim</a></li>
+                        </ul>
+                        <ul class="social-list">
+                            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-phone" aria-hidden="true"></i><span class="phone">0212 873 21 21</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 </div>
 {% block javascript %}
 <script src="javascripts/app.js"></script>

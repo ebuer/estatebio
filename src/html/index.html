@@ -1,10 +1,221 @@
 {% extends 'layouts/application.html' %}
 {% block content %}
-{% raw %}
 
-<div>
-    development branch
+{% import "./components/card.html" as card %}
+<div id="page-home" class="page home">
+    <div class="section start">
+        <div class="diamond"></div>
+        <div class="start-content">
+            <div class="container h-100">
+                <div class="row h-100">
+                    <div class="col col-md-7">
+                        <div class="start-inner">
+                            <div class="inner-content">
+                                <h1 class="title">EMLAK BIO</h1>
+                                <h3 class="text">
+                                    SEN İSTEDİĞİN EVİ HAYAL ET,
+                                    HAYAL ETTİĞİN EVİ YAPAY ZEKA <b class="blue">BOTUMUZ BULSUN!</b>
+                                </h3>
+                                <p class="subText">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse a libero faucibus,
+                                    ultricies nunc sit amet, condimentum ante. Cras volutpat dui et arcu condimentum dictum.Integer
+                                    sagittis, ex sit amet hendrerit iaculis, dui eros convallis tellus, a iaculis ex libero at ex. Nam ornare
+                                    ullamcorper tortor, eu semper lorem molestie ac.
+                                </p>
+                                <div class="buttons">
+                                    <a href="#" class="app-button">O EV BENİ BULSUN!</a>
+                                    <span class="subText">VEYA</span>
+                                    <a href="#" class="app-button white">İLANLARA GÖZ AT</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-md-5">
+                        slider
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section most-visit">
+        <div class="container">
+            <div class="app-slide">
+                <div class="slide-info">
+                    <div class="left">
+                        <span class="icon"><i class="fa fa-eye" aria-hidden="true"></i></span>
+                        <h6 class="title">EN ÇOK ZİYARET EDİLENLER</h6>
+                    </div>
+                    <div class="right">
+                        <div class="filter">
+                            <button class="app-button round white">SON 24 SAAT</button>
+                            <button class="app-button round white">SON 48 SAAT</button>
+                        </div>
+                        <span class="line"></span>
+                        <div class="nav js-nav" data-slider=".js-slide-visit">
+                            <button class="slide-btn prev js-slide-btn" data-action="prev"><i class="fa fa-caret-left"
+                                                                                              aria-hidden="true"></i>
+                            </button>
+                            <button class="slide-btn next js-slide-btn" data-action="next"><i class="fa fa-caret-right"
+                                                                                              aria-hidden="true"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-area">
+                    <div class="owl-carousel slide js-slide-visit">
+                        {% for item in cards %}
+                        <div class="item">
+                            {{card.field(item)}}
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section last-add">
+        <div class="container">
+            <div class="app-slide">
+                <div class="slide-info">
+                    <div class="left">
+                        <span class="icon"><i class="fa fa-home" aria-hidden="true"></i></span>
+                        <h6 class="title">SON EKLENENLER</h6>
+                    </div>
+                    <div class="right">
+                        <div class="filter">
+                            <button class="app-button round white">ÇOK ACİL</button>
+                            <button class="app-button round white">FİYATI DÜŞEN İLANLAR</button>
+                            <button class="app-button round white">SON 48 SAAT</button>
+                        </div>
+                        <span class="line"></span>
+                        <div class="nav js-nav" data-slider=".js-slide-last">
+                            <button class="slide-btn prev js-slide-btn" data-action="prev"><i class="fa fa-caret-left"
+                                                                                              aria-hidden="true"></i>
+                            </button>
+                            <button class="slide-btn next js-slide-btn" data-action="next"><i class="fa fa-caret-right"
+                                                                                              aria-hidden="true"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-area">
+                    <div class="owl-carousel slide js-slide-last">
+                        {% for item in cards | reverse %}
+                        <div class="item">
+                            {{card.field(item)}}
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section most-popular">
+        <div class="container">
+            <div class="app-slide">
+                <div class="slide-info">
+                    <div class="left">
+                        <span class="icon"><i class="fa fa-heart" aria-hidden="true"></i></span>
+                        <h6 class="title">EN ÇOK SEVİLEN ŞEHİRLER</h6>
+                    </div>
+                    <div class="right">
+                        <div class="nav js-nav" data-slider=".js-slide-popular">
+                            <button class="slide-btn prev js-slide-btn" data-action="prev"><i class="fa fa-caret-left"
+                                                                                              aria-hidden="true"></i>
+                            </button>
+                            <button class="slide-btn next js-slide-btn" data-action="next"><i class="fa fa-caret-right"
+                                                                                              aria-hidden="true"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-area">
+                    <div class="owl-carousel slide js-slide-popular">
+                        {% for item in popular %}
+                        <div class="item">
+                            {{card.field(item)}}
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section build-project">
+        <div class="container">
+            <div class="app-slide">
+                <div class="slide-info">
+                    <div class="left">
+                        <span class="icon"><i class="fa fa-building" aria-hidden="true"></i></span>
+                        <h6 class="title">SİTE PROJELERİ</h6>
+                    </div>
+                    <div class="right">
+                        <div class="nav js-nav" data-slider=".js-slide-project">
+                            <button class="slide-btn prev js-slide-btn" data-action="prev"><i class="fa fa-caret-left"
+                                                                                              aria-hidden="true"></i>
+                            </button>
+                            <button class="slide-btn next js-slide-btn" data-action="next"><i class="fa fa-caret-right"
+                                                                                              aria-hidden="true"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-area">
+                    <div class="owl-carousel slide js-slide-project">
+                        {% for item in projectSlide %}
+                        <div class="item">
+                            {{card.field(item)}}
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section instagram">
+        <div class="container">
+            <div class="app-slide">
+                <div class="slide-info">
+                    <div class="left">
+                        <span class="icon white"><i class="fa fa-instagram" aria-hidden="true"></i></span>
+                        <h6 class="title white">INSTAGRAM</h6>
+                    </div>
+                    <div class="right">
+                        <button class="app-button white">BİZİ TAKİP ET</button>
+                    </div>
+                </div>
+                <div class="slide-area">
+                    <div class="row">
+                        {% for i in range(6, 9) -%}
+                        <div class="col-4">
+                            <div class="app-card large">
+                                <div class="card-content">
+                                    <div class="card-img">
+                                        <a href="#"><img class="img" src="uploads/house0{{i}}.jpg" alt="house"></a>
+                                    </div>
+
+                                    <div class="card-tags">
+                                        <ul class="list">
+                                            <li class="item red">
+                                                <span class="text"><i class="fa fa-heart-o"></i> 1.4K</span>
+                                            </li>
+                                            <li class="item blue">
+                                                <span class="text"><i class="fa fa-comment-o"></i> 1.6K</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        {%- endfor %}
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
 </div>
 
+{% raw %}
 {% endraw %}
 {% endblock %}

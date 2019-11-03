@@ -1,5 +1,8 @@
-@import "normalize/import-now";
+@import "../../node_modules/bootstrap/scss/bootstrap";
+//@import "normalize/import-now";
+@import "fonts/font-awesome";
 @import "base/global";
-@import "base/custom";
+@import "base/owl";
 @import "base/custom";
 @import "components/index";
+@import "pages/index";

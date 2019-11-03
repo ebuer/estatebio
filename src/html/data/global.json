@@ -1,3 +1,160 @@
 {
-  "message": "App is Ready"
+  "cards": [
+    {
+      "src": "uploads/house01.jpg",
+      "tag_1": "4+2",
+      "tag_2": "DUBLEKS",
+      "profileSrc": "uploads/house02.jpg",
+      "title": "MÜSTAKİL 4+2 DUBLEKS",
+      "price": "2.500₺/AYLIK"
+    },
+    {
+      "src": "uploads/house02.jpg",
+      "tag_1": "4+2",
+      "tag_2": "DUBLEKS",
+      "profileSrc": "uploads/house03.jpg",
+      "title": "MÜSTAKİL 4+2 DUBLEKS",
+      "price": "2.500₺/AYLIK"
+    },
+    {
+      "src": "uploads/house03.jpg",
+      "tag_1": "4+2",
+      "tag_2": "DUBLEKS",
+      "profileSrc": "uploads/house08.jpg",
+      "title": "MÜSTAKİL 4+2 DUBLEKS",
+      "price": "2.500₺/AYLIK"
+    },
+    {
+      "src": "uploads/house04.jpg",
+      "tag_1": "4+2",
+      "tag_2": "DUBLEKS",
+      "profileSrc": "uploads/house05.jpg",
+      "title": "MÜSTAKİL 4+2 DUBLEKS",
+      "price": "2.500₺/AYLIK"
+    },
+    {
+      "src": "uploads/house05.jpg",
+      "tag_1": "4+2",
+      "tag_2": "DUBLEKS",
+      "profileSrc": "uploads/house07.jpg",
+      "title": "MÜSTAKİL 4+2 DUBLEKS",
+      "price": "2.500₺/AYLIK"
+    },
+    {
+      "src": "uploads/house06.jpg",
+      "tag_1": "4+2",
+      "tag_2": "DUBLEKS",
+      "profileSrc": "uploads/house13.jpg",
+      "title": "MÜSTAKİL 4+2 DUBLEKS",
+      "price": "2.500₺/AYLIK"
+    },
+    {
+      "src": "uploads/house07.jpg",
+      "tag_1": "4+2",
+      "tag_2": "DUBLEKS",
+      "profileSrc": "uploads/house12.jpg",
+      "title": "MÜSTAKİL 4+2 DUBLEKS",
+      "price": "2.500₺/AYLIK"
+    },
+    {
+      "src": "uploads/house08.jpg",
+      "tag_1": "4+2",
+      "tag_2": "DUBLEKS",
+      "profileSrc": "uploads/house11.jpg",
+      "title": "MÜSTAKİL 4+2 DUBLEKS",
+      "price": "2.500₺/AYLIK"
+    },
+    {
+      "src": "uploads/house09.jpg",
+      "tag_1": "4+2",
+      "tag_2": "DUBLEKS",
+      "profileSrc": "uploads/house10.jpg",
+      "title": "MÜSTAKİL 4+2 DUBLEKS",
+      "price": "2.500₺/AYLIK"
+    }
+  ],
+  "popular": [
+    {
+      "src": "uploads/house04.jpg",
+      "tag_1": "4+2",
+      "tag_2": "DUBLEKS",
+      "title": "MÜSTAKİL 4+2 DUBLEKS",
+      "price": "2.500₺/AYLIK"
+    },
+    {
+      "src": "uploads/house05.jpg",
+      "tag_1": "4+2",
+      "tag_2": "DUBLEKS",
+      "title": "MÜSTAKİL 4+2 DUBLEKS",
+      "price": "2.500₺/AYLIK"
+    },
+    {
+      "src": "uploads/house06.jpg",
+      "tag_1": "4+2",
+      "tag_2": "DUBLEKS",
+      "title": "MÜSTAKİL 4+2 DUBLEKS",
+      "price": "2.500₺/AYLIK"
+    },
+    {
+      "src": "uploads/house08.jpg",
+      "tag_1": "4+2",
+      "tag_2": "DUBLEKS",
+      "title": "MÜSTAKİL 4+2 DUBLEKS",
+      "price": "2.500₺/AYLIK"
+    },
+    {
+      "src": "uploads/house09.jpg",
+      "tag_1": "4+2",
+      "tag_2": "DUBLEKS",
+      "title": "MÜSTAKİL 4+2 DUBLEKS",
+      "price": "2.500₺/AYLIK"
+    },
+    {
+      "src": "uploads/house01.jpg",
+      "tag_1": "4+2",
+      "tag_2": "DUBLEKS",
+      "title": "MÜSTAKİL 4+2 DUBLEKS",
+      "price": "2.500₺/AYLIK"
+    },
+    {
+      "src": "uploads/house02.jpg",
+      "tag_1": "4+2",
+      "tag_2": "DUBLEKS",
+      "title": "MÜSTAKİL 4+2 DUBLEKS",
+      "price": "2.500₺/AYLIK"
+    },
+    {
+      "src": "uploads/house03.jpg",
+      "tag_1": "4+2",
+      "tag_2": "DUBLEKS",
+      "title": "MÜSTAKİL 4+2 DUBLEKS",
+      "price": "2.500₺/AYLIK"
+    }
+  ],
+  "projectSlide": [
+    {
+      "large": true,
+      "src": "uploads/house01.jpg",
+      "tag_1": "4+2",
+      "tag_2": "DUBLEKS",
+      "title": "MÜSTAKİL 4+2 DUBLEKS",
+      "price": "2.500₺/AYLIK"
+    },
+    {
+      "large": true,
+      "src": "uploads/house02.jpg",
+      "tag_1": "4+2",
+      "tag_2": "DUBLEKS",
+      "title": "MÜSTAKİL 4+2 DUBLEKS",
+      "price": "2.500₺/AYLIK"
+    },
+    {
+      "large": true,
+      "src": "uploads/house03.jpg",
+      "tag_1": "4+2",
+      "tag_2": "DUBLEKS",
+      "title": "MÜSTAKİL 4+2 DUBLEKS",
+      "price": "2.500₺/AYLIK"
+    }
+  ]
 }

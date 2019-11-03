@@ -1,0 +1,51 @@
+@import "../variable";
+
+.app-button {
+  padding: 8px 20px;
+  border: 0;
+  background-color: $standartBlue;
+  transition: all 300ms ease-in-out;
+  color: $standartWhite;
+  outline: none !important;
+  text-decoration: none !important;
+  font-size: 12px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  border-radius: 4px;
+
+  &:hover {
+    background-color: $standartWhite;
+    color: $standartBlue;
+  }
+
+  &.round {
+    border-radius: 5000px;
+    border: 1px solid $borderGray;
+  }
+
+  &.white {
+    background-color: $standartWhite;
+    color: $standartBlue;
+
+    &:hover {
+      background-color: $standartBlue;
+      color: $standartWhite;
+    }
+  }
+}
+
+.app-link {
+  font-size: 14px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  color: $standartBlue;
+  text-decoration: none !important;
+  outline: none !important;
+
+
+  &.gray {
+    color: $linkGray;
+  }
+}

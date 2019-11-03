@@ -1,0 +1,97 @@
+@import "../variable";
+
+.app-slide {
+  .slide-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .left {
+      display: flex;
+      align-items: center;
+
+      .icon {
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+        background-color: $standartBlue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        i {
+          color: #ffffff;
+        }
+
+        &.white {
+          background-color: #ffffff;
+
+          i {
+            color: $standartBlue;
+          }
+        }
+
+      }
+
+      .title {
+        margin: 0;
+        padding-left: 15px;
+        font-size: 14px;
+        font-weight: 600;
+        color: $standartBlue;
+
+        &.white {
+          color: #ffffff;
+        }
+      }
+    }
+
+    .right {
+      display: flex;
+      align-items: center;
+
+      .filter {
+        //margin-right: 10px;
+      }
+
+      .line {
+        display: inline-block;
+        width: 2px;
+        height: 20px;
+        background-color: #d8dae0;
+        margin: 0 10px;
+      }
+
+      .nav {
+        .slide-btn {
+          width: 40px;
+          height: 40px;
+          border-radius: 100%;
+          border: 1px solid $borderGray;
+          transition: 300ms ease-out;
+          outline: none;
+
+          i {
+            color: $standartBlue;
+          }
+
+          &:hover {
+            background-color: $standartBlue;
+
+            i {
+              color: #ffffff;
+            }
+          }
+
+          &.prev {
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  .slide-area {
+    padding-top: 40px;
+  }
+}
