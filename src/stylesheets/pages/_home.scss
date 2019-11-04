@@ -102,7 +102,7 @@
 
     @include screen('mobile') {
       &.start {
-        height: calc(100vh - 90px);
+        height: auto;
 
         .start-content {
           .start-inner {

@@ -1,13 +1,12 @@
 {% extends 'layouts/application.html' %}
 {% block content %}
 
+{% import "./components/steps.html" as step %}
 <div id="page-account" class="page account">
    <div class="container">
        <div class="row">
            <div class="col-12 col-md-3">
-               <div class="account-steps">
-
-               </div>
+                {{step.field({asd:asd})}}
            </div>
            <div class="col-12 col-md-9">
                <div class="account-form">
@@ -48,6 +47,19 @@
                                   <div class="form-group">
                                       <label>Şifre</label>
                                       <input class="app-input" type="password">
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="row mt-2">
+                              <div class="col">
+                                  <div class="form-check">
+                                      <input type="checkbox" class="form-check-input app-checkbox" id="exampleCheck1">
+                                      <label class="form-check-label" for="exampleCheck1"><a href="#">Üyelik Sözleşmesi’ni ve Ekleri’ni</a> kabul ediyorum.</label>
+                                  </div>
+                              </div>
+                              <div class="col">
+                                  <div class="form-group text-right">
+                                      <button class="app-button">DEVAM <i class="fa fa-arrow-right"></i></button>
                                   </div>
                               </div>
                           </div>

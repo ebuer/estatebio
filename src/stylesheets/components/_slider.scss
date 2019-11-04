@@ -164,6 +164,14 @@
 
   }
   @include screen('mobile'){
+    &.home {
+      height: auto;
+      overflow: visible;
+      position: static;
+      .home-slide-inner {
+        position: static;
+      }
+    }
     .slide-info {
       .right {
         .filter, .line {

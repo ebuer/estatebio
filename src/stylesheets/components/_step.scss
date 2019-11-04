@@ -1,0 +1,62 @@
+@import "../variable";
+
+.app-steps {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  .step-inner {
+    .list {
+      .item {
+        + .item {
+          padding-top: 15px;
+        }
+
+        .link {
+          display: flex;
+          align-items: center;
+          text-decoration: none;
+
+          .numb {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 30px;
+            height: 30px;
+            background-color: $borderGray;
+            border-radius: 100%;
+            font-size: 12px;
+            font-weight: bold;
+            color: $linkGray;
+            transition: all 300ms ease;
+          }
+
+          .text {
+            padding-left: 15px;
+            font-size: 12px;
+            font-weight: 600;
+            color: rgba(2, 12, 50, 0.5);
+            transition: all 300ms ease;
+          }
+
+          &:hover {
+            .text {
+              color: rgba(2, 12, 50, 1);
+            }
+          }
+
+          &.active {
+            .numb {
+              box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+              background-color: #ffffff;
+            }
+            .text {
+              color: rgba(2, 12, 50, 1);
+            }
+          }
+        }
+
+      }
+
+    }
+  }
+}

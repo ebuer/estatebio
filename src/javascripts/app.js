@@ -1,6 +1,7 @@
 import '../../node_modules/bootstrap/dist/js/bootstrap.bundle'
 import '../../node_modules/owl.carousel/dist/owl.carousel.min'
 import 'base/global'
+import 'base/helpers'
 import 'base/config'
 import 'base/vue'
 import 'base/custom'
